@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;WebDay02/WebContent/hello.html&apos; to &apos;syntex.html&apos;" description="Rename resource &apos;hello.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/hello.html" name="syntex.html" stamp="1568886358685" updateReferences="true"/>
+</session>

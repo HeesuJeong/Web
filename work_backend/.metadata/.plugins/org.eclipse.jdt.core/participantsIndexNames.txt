@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+C:\SSAFY2\work_backend\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\47961393.index
+\WebDay02\src
+C:\SSAFY2\work_backend\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4269081340.index
+\Servlet_Ex\src

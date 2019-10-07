@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload = function() {
+		var p = document.getElementById("data");
+		function firstfunction() {
+			console.log(p);
+		}
+		firstfunction(); //함수 안에서 또 다시 호출이 필요하다!!!!!!!!!
+	}
+</script>
+</head>
+<body>
+
+
+	<h1>DATA</h1>
+	<div>
+		<p id="data">content data</p>
+		<button>button</button>
+	</div>
+
+</body>
+</html>

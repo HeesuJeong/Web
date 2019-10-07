@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+window.onload=function(){
+	var button=document.querySelector("button");
+	button.addEventListener("click",go,true);
+	
+	function go(){
+		//var로 선언하면 지역변수가 되고
+		//var선언 안 하면 전역변수가 된다 ***************
+		xhr=new XMLHttpRequest(); //객체 하나 만들기
+		
+		//xml 베이스로 통신하게 된다
+		xhr.open('POST','server.jsp',true);//post방식으로, true(비동기로) 서버에 접속하겠다
+		xhr.send(); //request를 보낸다
+		xhr.onreadystatechange=function(){
+			if(xhr.readyState==4&&xhr.status==200){
+				var res=xhr.responseXML; //서버가  xml을 내려준다
+				
+				//Ajax이다
+				console.log(res.getElementsByTagName("name")[0].innerHTML);
+			}
+		}
+		
+	}
+}
+</script>
+</head>
+<body>
+
+
+	<h1>DATA</h1>
+	<div>
+		<p id="data">content data</p>
+		<button>button</button>
+	</div>
+	
+	
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+	<h1>DATA</h1>
+	<div>
+		<p id=data">content data</p>
+		<button>button</button>
+	</div>
+	<script type="text/javascript">
+	var p=document.getElementById("data");
+	console.log(p.getText());
+	</script>
+</body>
+</html>

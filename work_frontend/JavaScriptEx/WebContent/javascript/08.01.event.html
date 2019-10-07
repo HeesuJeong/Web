@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>new document</title>
+
+<!-- 절차식이므로 <script>부분이  body 이후에 있어야해 -->
+<script type="text/javascript">
+	function theFnc() {
+		alert("javascript");
+	}
+
+	function theFnc2() {
+		alert("javascript2");
+	}
+
+	//윈도우가 다 만들어지고(document도 다 만들어질때) 화면에 올라올 때 해당 함수 실행하겠다~
+	window.onload = function() {
+		var myBtn = document.getElementById("btn1");
+		console.log(myBtn);
+		
+		myBtn.onclick = theFnc;
+		//myBtn.onclick = theFnc2;
+	}
+	
+	function aa(){
+		var btn = document.getElementById('btn1');
+		document.getElementsByTagName('');
+		console.log(btn);
+	}	
+	//window.document.getElementsByTagName(tagName)
+	//document.getElementById
+	//document.querySelector(selectors)
+</script>
+</head>
+<body >
+	<button id="btn1" >버튼1</button>
+	<!-- 옛날 방식 -->
+	<button id="btn1" onclick="theFnc()" >버튼1</button>
+	<br/>
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ws_java_0826&apos; to &apos;ws_frontend_정희수&apos;" description="Rename resource &apos;ws_java_0826&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/ws_java_0826" name="ws_frontend_정희수" stamp="1566802292789" updateReferences="true"/>
+</session>

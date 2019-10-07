@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery-1.10.1.js"></script>
+<script type="text/javascript">
+var i = 0;
+$(function(){
+/* 	버튼 클릭 일어나면 evt 함수 실행한다
+	new 버튼에 태그를 만들고
+	d1에 어팬드하겠다!
+	버튼 누르면 F12하면 새로운 코드가 추가 된 것을 확인해보쟈!
+	*/
+	$('button').on('click', function(evt){
+		$('<button class="new">New Button'+ i++ +'</button>').appendTo($("#d1"));
+		
+		
+	});
+	
+	/* div에 클릭이 일어나면
+	동적바인딩이야*****
+	this는 이벤트 소스(즉 d1)였다.
+	이번에는 클릭한 버튼이 사라지길 바래! 
+	on함수에서 this를 바꿔버린다! 클릭한 버튼을 가리키게 돼 즉, 이벤트 소스를 바꾼다!("button.new")부분!
+	
+	이번에는 버튼 클릭시 버튼 사라지길 바란다!
+	html만들때는 없던 것을 코드 실행시 생기기를 바란다! */ 
+	
+	$('#d1').on('click', "button.new", function(evt){
+		console.log(evt.target);
+		$(this).remove();
+	});
+	
+});
+</script>
+</head>
+<body>
+<button>Create Button</button>
+<div id="d1"></div>
+<hr/>
+</body>
+</html>

@@ -1,0 +1,68 @@
+package edu.ssafy.business;
+
+import java.io.IOException;
+import java.net.URLEncoder;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import edu.ssafy.model.IMemManager;
+import edu.ssafy.model.MemManagerImpl;
+
+public class FoodServiceImpl implements IFoodService{
+	private IMemManager man=new MemManagerImpl();
+	
+	@Override
+	public void registMem(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		// 2.파라미터 작업(name 속성 쫓는다)
+
+				String id = request.getParameter("pid");
+				String name = request.getParameter("pname");
+				String pw = request.getParameter("ppw");
+				String addr = request.getParameter("paddr");
+				// 파라미터는 무조건 문자열로 주고받아진다
+				int age = Integer.parseInt(request.getParameter("page"));
+				String tel = request.getParameter("ptel");
+				// 3
+				boolean res = man.addMem(id, name, pw, addr, age, tel);
+				// 4
+				if (res) {
+					// request.setAttribute("result", id+"등록성공");
+					// request.getSession().setAttribute("result", id+"등록성공");
+					
+					
+					String msg = URLEncoder.encode(id+"등록성공", "UTF-8");
+					response.sendRedirect("result.jsp?result=" + msg);
+				} else {
+					// request.setAttribute("result", id+"등록실패");
+					String msg = URLEncoder.encode(id+"등록실패", "UTF-8");
+					response.sendRedirect("result.jsp?result=" + msg);
+				}
+				// 
+	}
+
+	@Override
+	public void logIn(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+		// TODO Auto-generated method stub
+		String id = request.getParameter("email");
+		String pw = request.getParameter("name");
+		boolean isLogin = man.isLogin(id, pw);
+		if (isLogin) {
+			//세션에 로그인 저장
+			request.getSession().setAttribute("islogin", "isLogin");
+			request.getSession().setAttribute("id",id);
+			
+			
+			///메인과의 연동 필요~
+			///로그인 상태 알려주기 Ajax
+			
+		} else {
+			//
+		}
+	}
+	
+	
+}

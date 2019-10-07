@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+var sum=1+20;
+console.log(sum);
+document.write(sum);
+</script>
+</body>
+</html>
