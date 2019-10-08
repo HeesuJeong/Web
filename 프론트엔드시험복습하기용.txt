@@ -1,0 +1,129 @@
+1. $("div").____(function(index,item){alert(this);});
+div태그가 여러개 있을때 반복처리 하려고 할때
+밑줄 친 곳은?
+each/for/tag/on
+(for)
+
+2.input[type=checkbox]:checked+div{display:none;}
+CSS의 코드 설명 알맞은거 고르기
+
+(체크박스가 체크되었을때 인접형제(바로다음)div보이지 않게한다?!)
+
+3.다음 자바 스크립트 객체 중 현재 페이지의 위치 정보 관리하며,페이지 이동에 사용될 수 있는 것은?
+location/screen/document/element
+(location)
+
+4. p{float:eft;}
+body태그 안에 a,b,c,d 4개의 p태그 있다
+실행 결과 화면은?
+(화면 왼쪽에 a b c d표시된다)
+
+5. $("div").click(function(evt){alert(this);});
+해당 코드의 this설명 맞은 것은?
+발생된 이벤트의 소스(div태그)/발생된이벤트/현재 수행되고 있는 함수/현재 수행되고 있는 문서(document) 의미
+(3번 찍음)
+
+6.javascript if문에 k넣었을경우
+<script>var k=10;
+if(k) alert("YES");
+else alert("NO"); </script>
+
+YES가 팝업창/NO가 팜업창/K가boolean아니라 에러/K가 문법 안 맞다고 에러발생
+(1번찍음)
+
+7.자바스크립트의 수행결과는?
+<script>var won='1000원'
+alert(parseInt(won)+2000);
+</script>
+
+(3000원)
+
+8. #insa1+#insa2 찍음
+
+9.줄바꿈 일어나지 않는 태그는?(즉 inline-level 묻는다)
+div/table/h1/span
+(span)
+
+10.데이터의 포맷 중 하나로,시작태그와 끝태그 사이에 데이터 담아 사용, 태그명이 고정되어 있지 않아 원하는 태그를 자유롭게 사용할 수 있다.
+(body)
+
+11.jQuery지문에 대한 설명?
+$("C").on("E","S",function(){});
+>>C(동적으로 추가된 C 포함 유무 선택)의 후손인 S(동적으로 추가된 S포함 유무 선택)에 E라는 이벤트가 발생하면 주어진 함수 실행된다.
+
+(포함 안 함,포함 선택)
+
+12. HTML에서 input태그가 존재하고 값은 주어지지만 화면에서 input태그가 보이지 않도록한다. type속성은?
+password/hide/hidden/none
+(hidden)
+
+13. CSS 첫번째 이미지를 마지막으로 이동하는 코드이다. 2초후 딱 한번만 이동하고자 할 때 밑줄친 A에 들어갈 함수는?
+setTImeout/iterator/setInterval/forEach
+(setTimeout선택)
+
+
+14.다음 window함수 중 확인고 취소 버튼을 가지고,삭제 요청시 "정말로 삭제 하시겠습니까?"와 같이 사용자 동작을 확인하기 위한 사용은?
+window.alert()/.confirm()/open()/prompt()
+
+15.Javascript 함수중 setInterval()은 지정된 시간 간격으로 지속적인 작업을 반복하고자 할때 사용.
+setInterval()의 반복적인 작업을 멈추고자한다면 어떤 함수?
+stop(intervalld)/stopInterval()/clear()/clearInterval()
+(4번 선택)
+
+
+16.CSS , 화면에 보여지는 내용과 상관없이 화면의 특정 위치에 보여지도록 하려면? position속성 무엇으로?
+static/relative/fixed/absolute
+(fixed선택)
+
+17.HTML5에 시맨틱 태그 추가되었다.
+주로 메뉴 구성에 쓰이는 태그는?
+SECTION/NAV/HEADER/MENU
+(NAV선택)
+
+18.같은 div에 클래스 이름이 "aaa"인게 두개,"bbb" 일때 두번째 "aaa"선택하고 싶으면 선택자..?
+(.aaa:last-child)
+
+19.javascript함수 실행 결과 'Hello SSAFY'나오려면 어떻게 함수 호출?
+
+function test(name){var output='Hello'+name;
+return functon(){alert(output);};
+}
+(test('SSAFY') 선택함)
+
+20.웹 문서내에서 result 아이디 가지고 있는 요소 찾아 추가 작업하려면 _______.getElementById("result") 밑줄은?
+window/document/context/page
+
+(document선택함)
+
+21. ssafy는 <span>사회의 첫걸음</span>에 많은 도움이 될 것이다.
+그림은 ssafy는 
+다음줄에 "네모 박스" 존재!
+에 많은 도움이 될것이다
+
+span{display:____;
+background-color:blue;
+width:~; height:~;
+border:dashed;
+} 코드에서 밑줄은?
+
+inline/inline-bolck/block/table
+(inline-block 선택함)
+
+22.HTML5에서 mp4파일고 같은 동영상 파일 실행하기 위한 태그?
+(multimedia입력)
+
+23. 웹표준에 따라 웹페이지 구현시 각 기술의 쓰임새로 가장 적당하지 않은 것은?
+HTML5 Markup:웹 페이지의 구조 정의를 담당
+CSS3:웹 페이지의 형식 정의를 담당
+Javascript:웹 페이지의 내용 담당
+HTML5 API:웹 페이지의 동적 처리 담당
+
+24. 웹 프로그래밍에서 비동기 통신을 구현하고자 한다. 웹 화면을 갱신하지 않으면서 request를 전송하고 Data를 수신하기 위해 Javascript객체인 XMLHttpRequest를 활용한다. 이러한 비동기 통신을 구현한 기술은?
+(Ajax 입력)
+
+25. jQuery에서 아디디가 btn인 선택은?
+$("_____").~~
+
+btn/#btn/.btn/%btn
+
+(%btn 선택함) 
