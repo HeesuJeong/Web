@@ -1,9 +1,0 @@
-INDEX VERSION 1.4+C:\SSAFY2\work_backend\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-2263050895.index
-294722796.index
-509127310.index
-792285432.index
-2912166769.index
-4127183327.index
-1118854983.index
-1371274809.index
